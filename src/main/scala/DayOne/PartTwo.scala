@@ -1,11 +1,12 @@
 package DayOne
 
-import DayOne.Utils.{processLine, readInputs, rotateCircular}
+import DayOne.Utils.processLine
+import General.Utils.{readInputs, rotateCircular}
 
 object PartTwo {
   def main(args: Array[String]): Unit = {
     // Read lines from input.txt
-    val inputs: Seq[String] = readInputs()
+    val inputs: Seq[String] = readInputs("DayOne")
 
     // process inputs
     val result = processInputs(inputs)
